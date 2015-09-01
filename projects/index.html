@@ -1,0 +1,21 @@
+---
+layout: default
+title: Projects
+---	
+<div class="home">
+
+  <h1 class="page-heading">Projects</h1>
+
+  <ul class="post-list">
+    {% for project in site.categories.project do %}
+      <li>
+        <img src="https://placehold.it/250x250">
+        <h2>
+          <a class="post-link" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
+        </h2>
+        <p>{{ project.summary }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>

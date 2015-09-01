@@ -1,0 +1,19 @@
+# Site settings
+title: Daniel van den Brink
+email: mail@danielvandenbrink.com
+description:
+baseurl: ""
+url: "https://danielvandenbrink.com"
+permalink: "/:categories/:title"
+bitbucket_username: dvdbrink
+github_username: dvdbrink
+
+# Build settings
+markdown: kramdown
+
+exclude:
+  - "bower_components"
+  - "bower.json"
+  - "node_modules"
+  - "package.json"
+  - "Gruntfile.js"
