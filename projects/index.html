@@ -14,7 +14,13 @@ title: Projects
     {% endif %}
     
     <div class="one-third column">
-      <img class="u-max-full-width" src="https://placehold.it/300x200">
+      <div id="slideshow">
+        {% for image in project.images %}
+          <div>
+            <img class="u-max-full-width" src="{{ image | prepend: "/images/" | prepend: site.url }}">
+          </div>
+        {% endfor %}
+      </div>
       <h2>
         <a class="post-link" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
       </h2>

@@ -5,7 +5,12 @@ module.exports = function(grunt) {
                 files: [
                 	{expand: true, cwd: 'bower_components/skeleton-css/css/', src: '*.css', dest: 'css/'}
                 ]
-            }            
+            },
+            jquery: {
+                files: [
+                    {expand: true, cwd: 'bower_components/jquery/dist', src: '*.min.js', dest: 'js/'}
+                ]
+            }   
         }
     });
 
