@@ -1,31 +1,28 @@
 ---
 layout: default
 title: Projects
----	
-<div class="home">
+---
 
+<div class="projects">
   <h1 class="page-heading">Projects</h1>
 
-  <div class="container">
-    {% for project in site.categories.project do %}
-      {% assign loopindex = forloop.index | modulo: 3 %}
+  {% for project in site.categories.project do %}
+    {% assign loopindex = forloop.index | modulo: 3 %}
 
-      {% if loopindex == 1 %}
-      <div class="row">
-      {% endif %}
-      
-      <div class="one-third column">
-        <img src="https://placehold.it/250x250">
-        <h2>
-          <a class="post-link" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
-        </h2>
-        <p>{{ project.summary }}</p>
+    {% if loopindex == 1 %}
+    <div class="row">
+    {% endif %}
+    
+    <div class="one-third column">
+      <img class="u-max-full-width" src="https://placehold.it/300x300">
+      <h2>
+        <a class="post-link" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
+      </h2>
+      <p>{{ project.summary }}</p>
+    </div>
+    
+    {% if loopindex == 0 %}
       </div>
-      
-      {% if loopindex == 0 %}
-        </div>
-      {% endif %}
-    {% endfor %}
+    {% endif %}
+  {% endfor %}
   </div>
-
-</div>
