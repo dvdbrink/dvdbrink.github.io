@@ -1,9 +1,9 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         copy: {
-            bootstrap: {
+            skeleton: {
                 files: [
-                	{expand: true, cwd: 'bower_components/bootstrap/dist/', src: 'bootstrap.scss', dest: '_sass/'}
+                	{expand: true, cwd: 'bower_components/skeleton-css/css/', src: '*.css', dest: 'css/'}
                 ]
             }            
         }

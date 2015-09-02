@@ -6,16 +6,26 @@ title: Projects
 
   <h1 class="page-heading">Projects</h1>
 
-  <ul class="post-list">
+  <div class="container">
     {% for project in site.categories.project do %}
-      <li>
+      {% assign loopindex = forloop.index | modulo: 3 %}
+
+      {% if loopindex == 1 %}
+      <div class="row">
+      {% endif %}
+      
+      <div class="one-third column">
         <img src="https://placehold.it/250x250">
         <h2>
           <a class="post-link" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
         </h2>
         <p>{{ project.summary }}</p>
-      </li>
+      </div>
+      
+      {% if loopindex == 0 %}
+        </div>
+      {% endif %}
     {% endfor %}
-  </ul>
+  </div>
 
 </div>

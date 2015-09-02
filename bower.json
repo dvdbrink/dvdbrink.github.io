@@ -1,9 +1,7 @@
-{
+    {
     "name": "dvdbrink",
     "dependencies": {
-        "bootstrap": "~3.3.5",
-        "jquery": "~2.1.4",
-        "fontawesome": "~4.4.0"
+        "skeleton-css": "~2.0.4"
     },
     "ignore": [
         "**/.*",

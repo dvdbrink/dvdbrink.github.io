@@ -1,7 +1,7 @@
 # Site settings
 title: Daniel van den Brink
 email: mail@danielvandenbrink.com
-description:
+description: Hi. I'm Daniel.
 baseurl: ""
 url: "https://danielvandenbrink.com"
 permalink: "/:categories/:title"
