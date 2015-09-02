@@ -235,12 +235,12 @@
     }
 }
 
-#slideshow {
+.slideshow {
     position: relative;
     width: 300px;
-    height: 200px;
+    height: 164px;
 }
 
-#slideshow > div {
+.slideshow > div {
     position: absolute;
 }

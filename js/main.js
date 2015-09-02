@@ -1,12 +1,16 @@
 $(document).ready(function() {
-    $("#slideshow > div:gt(0)").hide();
+    $(".slideshow").each(function() {
+        $("div:gt(0)", this).hide();
+    });
 
-    setInterval(function() { 
-      $('#slideshow > div:first')
-        .fadeOut(1000)
-        .next()
-        .fadeIn(1000)
-        .end()
-        .appendTo('#slideshow');
-    },  3000);
+    setInterval(function() {
+        $(".slideshow").each(function() {
+            $("div:first", this)
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo(this);
+        });
+    }, 3000);
 });
