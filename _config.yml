@@ -4,6 +4,7 @@ email: mail@danielvandenbrink.com
 description: Hi. I'm Daniel.
 baseurl: ""
 url: "https://danielvandenbrink.com"
+post_dirs: false
 permalink: "/:categories/:title"
 bitbucket_username: dvdbrink
 github_username: dvdbrink
