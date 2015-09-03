@@ -6,19 +6,20 @@ title: Blog
 
   <h1 class="page-heading">Blog</h1>
 
-  <ul class="post-list">
-    {% if site.categories.blog == empty %}
-      Nothing to see here.
-    {% endif %}
-    {% for post in site.categories.blog do %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  {% if site.categories.blog %}
+    <ul class="post-list">
+      {% for post in site.categories.blog do %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    Nothing to see here.
+  {% endif %}
 
 </div>

@@ -6,23 +6,27 @@ title: Projects
 <div class="projects">
   <h1 class="page-heading">Projects</h1>
 
-  {% for project in site.categories.project do %}
-    {% assign loopindex = forloop.index | modulo: 3 %}
+  {% if site.categories.project %}
+    {% for project in site.categories.project do %}
+      {% assign loopindex = forloop.index | modulo: 3 %}
 
-    {% if loopindex == 1 %}
-    <div class="row">
-    {% endif %}
-    
-    <div class="one-third column project">
-      <a href="{{ project.url | prepend: site.baseurl }}">
-        <img src="{{ project.images[0] | prepend: "/images/" | prepend: site.url }}">
-        <h2 class="title">{{ project.title }}</h2>
-        <p class="summary">{{ project.summary }}</p>
-      </a>
-    </div>
-    
-    {% if loopindex == 0 %}
+      {% if loopindex == 1 %}
+      <div class="row">
+      {% endif %}
+      
+      <div class="one-third column project">
+        <a href="{{ project.url | prepend: site.baseurl }}">
+          <img src="{{ project.images[0] | prepend: "/images/" | prepend: site.url }}">
+          <h2 class="title">{{ project.title }}</h2>
+          <p class="summary">{{ project.summary }}</p>
+        </a>
       </div>
-    {% endif %}
-  {% endfor %}
-  </div>
+      
+      {% if loopindex == 0 %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  {% else %}
+    Nothing to see here.
+  {% endif %}
+</div>
