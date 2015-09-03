@@ -14,17 +14,11 @@ title: Projects
     {% endif %}
     
     <div class="one-third column project">
-      <div class="slideshow">
-        {% for image in project.images %}
-          <div>
-            <img class="u-max-full-width" src="{{ image | prepend: "/images/" | prepend: site.url }}">
-          </div>
-        {% endfor %}
-      </div>
-      <h2 class="title">
-        <a class="post-link" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
-      </h2>
-      <p class="summary">{{ project.summary }}</p>
+      <a href="{{ project.url | prepend: site.baseurl }}">
+        <img src="{{ project.images[0] | prepend: "/images/" | prepend: site.url }}">
+        <h2 class="title">{{ project.title }}</h2>
+        <p class="summary">{{ project.summary }}</p>
+      </a>
     </div>
     
     {% if loopindex == 0 %}

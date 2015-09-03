@@ -6,7 +6,7 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">Last update on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-    <a class="post-meta" href="{{ page.repository }}">Repository</a>
+    <p class="post-meta">Repository: <a href="{{ page.repository }}">{{ page.repository }}</a></p>
   </header>
 
   <article class="post-content">

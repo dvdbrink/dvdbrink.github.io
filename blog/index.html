@@ -7,6 +7,9 @@ title: Blog
   <h1 class="page-heading">Blog</h1>
 
   <ul class="post-list">
+    {% if site.categories.blog == empty %}
+      Nothing to see here.
+    {% endif %}
     {% for post in site.categories.blog do %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
