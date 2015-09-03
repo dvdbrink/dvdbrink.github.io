@@ -13,7 +13,7 @@ title: Projects
     <div class="row">
     {% endif %}
     
-    <div class="one-third column">
+    <div class="one-third column project">
       <div class="slideshow">
         {% for image in project.images %}
           <div>
@@ -21,10 +21,10 @@ title: Projects
           </div>
         {% endfor %}
       </div>
-      <h2>
+      <h2 class="title">
         <a class="post-link" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
       </h2>
-      <p>{{ project.summary }}</p>
+      <p class="summary">{{ project.summary }}</p>
     </div>
     
     {% if loopindex == 0 %}
