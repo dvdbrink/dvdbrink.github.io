@@ -1,9 +1,8 @@
 ---
 layout: project
-title: lightcraft
+title: Lightcraft
 summary: Blabla
-status: inactive
-repository: github.com/dvdbrink/ion
+status: concluded
 images:
  - lightcraft0.PNG
  - lightcraft1.PNG
@@ -22,5 +21,5 @@ tags: c++
 * B
 
 ## Lessons learned
-* A
-* B
+* Test performance on a console from the beginning. Xbox 360 performance was quite a dissapointment even though the implementation is not optimized not is XNA ment for high performance 3D games.
+* Working with a external party (artists) was difficult.

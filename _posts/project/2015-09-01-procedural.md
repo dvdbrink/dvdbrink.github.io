@@ -3,7 +3,7 @@ layout: project
 title: procedural
 summary: Blabla
 status: inactive
-repository: github.com/dvdbrink/ion
+repository: https://github.com/dvdbrink/ion
 images:
  - lightcraft0.PNG
  - lightcraft1.PNG
