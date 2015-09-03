@@ -1,14 +1,11 @@
 ---
 layout: project
-title: procedural
-summary: Blabla
+title: Procedural
+summary: Library for creating procedural generated terrain using several implemented algorithms.
 status: inactive
-repository: https://github.com/dvdbrink/ion
+repository: https://github.com/dvdbrink/procedural
 images:
  - lightcraft0.PNG
- - lightcraft1.PNG
- - lightcraft2.PNG
- - lightcraft3.PNG
 categories: project
 tags: c#
 ---
@@ -17,10 +14,7 @@ tags: c#
 * Improve C++ programming language skills. Focus on C++11/14.
 * Complete emulation of the CHIP-8 chip.
 
-## Results
-* A
-* B
-
-## Lessons learned
-* A
-* B
+## Roadmap
+* Implement simplex noise.
+* Implement alternative(s) to marching cubes algorithm.
+* A better name.
