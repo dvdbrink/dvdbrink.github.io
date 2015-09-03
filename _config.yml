@@ -1,10 +1,9 @@
 # Site settings
 title: Daniel van den Brink
 email: mail@danielvandenbrink.com
-description: Hi. I'm Daniel.
+description: Hi. I'm Daniel. Please keep in mind that both this website and many of my projects are a work in progress.
 baseurl: ""
 url: "https://danielvandenbrink.com"
-post_dirs: false
 permalink: "/:categories/:title"
 bitbucket_username: dvdbrink
 github_username: dvdbrink
