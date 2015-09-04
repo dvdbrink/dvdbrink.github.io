@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Lightcraft
-summary: Blabla
+summary: 3D puzzle platform game that learns kids various aspects of light though puzzels.
 status: concluded
 images:
  - lightcraft0.PNG
@@ -9,7 +9,7 @@ images:
  - lightcraft2.PNG
  - lightcraft3.PNG
 categories: project
-tags: c++
+tags: c# xna 3d platformer puzzle platform game
 ---
 
 ## Goals
