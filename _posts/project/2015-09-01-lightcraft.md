@@ -4,10 +4,7 @@ title: Lightcraft
 summary: 3D puzzle platform game that learns kids various aspects of light though puzzels.
 status: concluded
 images:
- - lightcraft0.PNG
- - lightcraft1.PNG
- - lightcraft2.PNG
- - lightcraft3.PNG
+ - lightcraft3.png
 categories: project
 tags: c# xna 3d platformer puzzle platform game
 ---
