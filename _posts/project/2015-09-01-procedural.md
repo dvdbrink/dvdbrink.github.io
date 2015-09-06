@@ -5,14 +5,14 @@ summary: Library for creating procedural generated terrain using several impleme
 status: inactive
 repository: https://github.com/dvdbrink/procedural
 images:
- - grapple0.PNG
+ - grapple0.png
 categories: project
 tags: c#
 ---
 
 ## Goals
-* Improve C++ programming language skills. Focus on C++11/14.
-* Complete emulation of the CHIP-8 chip.
+* Gain knowlege of noise and generation algorithms.
+* Standalone library usable in e.g. Unity and MonoGame.
 
 ## Roadmap
 * Implement simplex noise.
