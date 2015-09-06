@@ -16,7 +16,7 @@ title: Projects
       
       <div class="one-third column project">
         <a href="{{ project.url | prepend: site.baseurl }}">
-          <img src="{{ project.images[0] | prepend: "/images/" | prepend: site.url }}">
+          {% if project.images %}<img src="{{ project.images[0] | prepend: "/images/" | prepend: site.url }}">{% endif %}
           <h2 class="title">{{ project.title }}</h2>
           <p class="summary">{{ project.summary }}</p>
         </a>
