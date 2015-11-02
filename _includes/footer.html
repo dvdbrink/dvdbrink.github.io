@@ -53,3 +53,11 @@
   </div>
 
 </footer>
+
+<script type="text/javascript">
+  var maxheight = 0;
+  $(".column").each(function(){
+    if($(this).height() > maxheight) { maxheight = $(this).height(); }
+  });
+  $(".column").height(maxheight);
+</script>
