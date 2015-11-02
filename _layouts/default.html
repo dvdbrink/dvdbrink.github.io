@@ -14,11 +14,13 @@
   </body>
 
   <script type="text/javascript">
+  $(window).load(function() {
     var maxheight = 0;
     $(".column").each(function(){
       if($(this).height() > maxheight) { maxheight = $(this).height(); }
     });
     $(".column").height(maxheight);
+  });
   </script>
 
 </html>
