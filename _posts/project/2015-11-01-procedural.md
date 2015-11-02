@@ -5,7 +5,7 @@ summary: Library for creating procedural generated terrain using several impleme
 status: inactive
 repository: https://github.com/dvdbrink/procedural
 images:
- - grapple0.png
+ - grapple-top.png
 categories: project
 tags: c#
 ---
