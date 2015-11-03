@@ -18,9 +18,9 @@ layout: default
 
     {{ content }}
 
-    {% if project.images %}
+    {% if page.images %}
       <h2 id="images">Images</h2>
-      {% for image in project.images do %}
+      {% for image in page.images do %}
         <img src="{{ image | prepend: "/images/" | prepend: site.url }}" width="150">
       {% endfor %}
     {% endif %}
