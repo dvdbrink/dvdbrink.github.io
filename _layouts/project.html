@@ -17,6 +17,13 @@ layout: default
     <p>{{ page.summary }}</p>
 
     {{ content }}
+
+    {% if project.images %}
+      <h2 id="images">Images</h2>
+      {% for image in project.images do %}
+        <img src="{{ image | prepend: "/images/" | prepend: site.url }}" width="150">
+      {% endfor %}
+    {% endif %}
   </article>
 
 </div>
