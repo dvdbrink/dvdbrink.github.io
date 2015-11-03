@@ -2,7 +2,7 @@
 layout: project
 title: Lightcraft
 summary: 3D puzzle/platformer with 2-player co-op that learns kids various aspects of light through puzzels.
-status: done
+status: concluded
 images:
  - lightcraft-world.png
  - lightcraft-world2.png
