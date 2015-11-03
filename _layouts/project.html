@@ -21,7 +21,7 @@ layout: default
     {% if page.images %}
       <h2 id="images">Images</h2>
       {% for image in page.images do %}
-        <img src="{{ image | prepend: "/images/" | prepend: site.url }}" width="150">
+        <a href="{{ image | prepend: "/images/" | prepend: site.url }}"><img src="{{ image | prepend: "/images/" | prepend: site.url }}" width="300"></a>
       {% endfor %}
     {% endif %}
   </article>
