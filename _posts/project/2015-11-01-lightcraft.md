@@ -25,10 +25,10 @@ tags: c# xna 3d platformer puzzle coop xbox360
 * Rendering/updating objects
   * Indexed rendering for objects such as trees.
   * Occulsion testing using a quad tree and ray tracers.
-  * Basic collision detection using a sphere as a first check and more detailed
+  * Basic collision detection using a sphere as a first check and more detailed.
 * Game Editor
-  * Modify heightmap
-  * Placing objects
+  * Modify heightmap.
+  * Placing objects.
 
 ## Lessons learned
 * Test performance on a all platforms from the beginning. Xbox 360 is quite a different beast compared to a gaming desktop.
