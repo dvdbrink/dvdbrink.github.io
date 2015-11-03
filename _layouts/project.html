@@ -8,8 +8,8 @@ layout: default
     <p class="post-meta">Last update on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
 
     <p class="post-meta">
-        {% if page.status %}Status: <a href="{{ page.status }}">{{ page.status }}</a>{% endif %}
-        {% if page.repository %}Repository: <a href="{{ page.repository }}">{{ page.repository }}</a>{% endif %}
+        Status: {{ page.status }}
+        {% if page.repository %}<br />Repository: <a href="{{ page.repository }}">{{ page.repository }}</a>{% endif %}
     </p>
   </header>
 
